@@ -181,6 +181,7 @@ export const Navigation: React.FC<NavigationProps> = ({ onPageChange }) => {
             <motion.button
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
+              onClick={() => window.open('https://my.aisleep.site/', '_blank', 'noopener,noreferrer')}
               className="btn-ghost"
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
@@ -298,6 +299,7 @@ export const Navigation: React.FC<NavigationProps> = ({ onPageChange }) => {
                     className="flex flex-col gap-3 pt-6 mt-4 border-t border-[#00CFFF]/20"
                   >
                     <button
+                      onClick={() => window.open('https://my.aisleep.site/', '_blank', 'noopener,noreferrer')}
                       className="px-6 py-3 bg-white/10 backdrop-blur-sm border border-white/20 text-white rounded-full font-bold text-sm hover:bg-white/20 transition-all duration-300 w-full min-h-[48px] flex items-center justify-center"
                     >
                       Login
