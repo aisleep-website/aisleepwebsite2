@@ -139,11 +139,6 @@ export const WhitepaperPage: React.FC<WhitepaperPageProps> = ({ onBack }) => {
       description: '9+ years in crypto & blockchain.'
     },
     {
-      name: 'Khaled Owaidan',
-      role: 'Co-Founder & Strategic Partner',
-      description: 'Investment advisory & portfolio management.'
-    },
-    {
       name: 'Abdulrahman Bokir',
       role: 'Blockchain Developer',
       description: 'Smart contracts (BSC), CEX/DEX integrations.'
