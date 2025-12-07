@@ -100,35 +100,75 @@ export const WhitepaperPage: React.FC<WhitepaperPageProps> = ({ onBack }) => {
   const roadmapData = [
     {
       period: 'Q1 2026 — Core Ecosystem Launch',
-      milestones: 'Launch of the official AISleep App (iOS & Android). Activation of AISleep\'s foundational experience and core progression system. Launch of the AIS token on decentralized platforms. First centralized exchange listing to ensure accessibility and liquidity. Initial release of our reward and progression framework inside the app.'
+      milestones: [
+        'Launch of the official AISleep App (iOS & Android)',
+        'Activation of AISleep\'s foundational experience and core progression system',
+        'Launch of the AIS token on decentralized platforms',
+        'First centralized exchange listing to ensure accessibility and liquidity',
+        'Initial release of our reward and progression framework inside the app'
+      ]
     },
     {
       period: 'Q2 2026 — Expansion & User Growth',
-      milestones: 'Major update introducing advanced engagement features and deeper user progression. Release of AISleep\'s first digital asset layer to support long-term ecosystem value. Expansion of our reward engine with refined mechanics. Additional exchange listings to widen token reach. Rollout of the first wave of global community initiatives.'
+      milestones: [
+        'Major update introducing advanced engagement features and deeper user progression',
+        'Release of AISleep\'s first digital asset layer to support long-term ecosystem value',
+        'Expansion of our reward engine with refined mechanics',
+        'Additional exchange listings to widen token reach',
+        'Rollout of the first wave of global community initiatives'
+      ]
     },
     {
       period: 'Q3 2026 — Integrations & Enhanced Intelligence',
-      milestones: 'Integration of broader wellness data channels to enrich user experience. Significant upgrade to AISleep\'s AI-based guidance system. Early partnerships within wellness and digital health ecosystems. Automated reward optimization and behavioral insights features.'
+      milestones: [
+        'Integration of broader wellness data channels to enrich user experience',
+        'Significant upgrade to AISleep\'s AI-based guidance system',
+        'Early partnerships within wellness and digital health ecosystems',
+        'Automated reward optimization and behavioral insights features'
+      ]
     },
     {
       period: 'Q4 2026 — Global Positioning Phase',
-      milestones: 'Localization and multi-language support for international markets. Strategic partnerships with global wellness and lifestyle platforms. Enhanced AI coaching and personalized improvement pathways. Additional token utility features introduced into the ecosystem.'
+      milestones: [
+        'Localization and multi-language support for international markets',
+        'Strategic partnerships with global wellness and lifestyle platforms',
+        'Enhanced AI coaching and personalized improvement pathways',
+        'Additional token utility features introduced into the ecosystem'
+      ]
     },
     {
       period: '2027 — Institutional & Large-Scale Development',
-      milestones: 'Collaboration with regional wellness organizations and digital innovation hubs. Development of enterprise-level wellness infrastructure tools. Expansion of AI-driven analytics to support broader professional and lifestyle applications. Strengthening of the AISleep brand across targeted global regions.'
+      milestones: [
+        'Collaboration with regional wellness organizations and digital innovation hubs',
+        'Development of enterprise-level wellness infrastructure tools',
+        'Expansion of AI-driven analytics to support broader professional and lifestyle applications',
+        'Strengthening of the AISleep brand across targeted global regions'
+      ]
     },
     {
       period: '2028 — Global Ecosystem Maturity',
-      milestones: 'Full-scale international expansion across multiple continents. Deployment of multi-market engagement models. Advanced multilingual support and global user onboarding tools. Consolidation of AISleep as a leader in behavioral wellness innovation.'
+      milestones: [
+        'Full-scale international expansion across multiple continents',
+        'Deployment of multi-market engagement models',
+        'Advanced multilingual support and global user onboarding tools',
+        'Consolidation of AISleep as a leader in behavioral wellness innovation'
+      ]
     },
     {
       period: '2029 — Ecosystem Deepening & Partnerships',
-      milestones: 'Integration with large wellness networks and institutional partners. Deployment of secure analytics channels for organizational use. Broadened utility for AIS token across various digital ecosystems.'
+      milestones: [
+        'Integration with large wellness networks and institutional partners',
+        'Deployment of secure analytics channels for organizational use',
+        'Broadened utility for AIS token across various digital ecosystems'
+      ]
     },
     {
       period: '2030 — AISleep Becomes a Global Wellness Infrastructure',
-      milestones: 'Transition into a decentralized, community-driven governance model (DAO). Establishment of a sustainable multi-revenue ecosystem. AISleep recognized as a global behavioral wellness standard with long-term market impact.'
+      milestones: [
+        'Transition into a decentralized, community-driven governance model (DAO)',
+        'Establishment of a sustainable multi-revenue ecosystem',
+        'AISleep recognized as a global behavioral wellness standard with long-term market impact'
+      ]
     },
   ];
 
@@ -483,7 +523,16 @@ export const WhitepaperPage: React.FC<WhitepaperPageProps> = ({ onBack }) => {
                       {roadmapData.map((item, index) => (
                         <tr key={index} className={`border-b border-gray-700/50 ${index % 2 === 0 ? 'bg-gray-800/20' : 'bg-gray-800/40'} hover:bg-gray-700/30 transition-colors`}>
                           <td className="py-4 px-6 text-purple-400 font-semibold whitespace-nowrap">{item.period}</td>
-                          <td className="py-4 px-6 text-gray-300 leading-relaxed">{item.milestones}</td>
+                          <td className="py-4 px-6 text-gray-300 leading-relaxed">
+                            <ul className="space-y-2">
+                              {item.milestones.map((milestone, milestoneIndex) => (
+                                <li key={milestoneIndex} className="flex items-start gap-2">
+                                  <div className="w-1.5 h-1.5 bg-cyan-400 rounded-full mt-2 flex-shrink-0" />
+                                  <span>{milestone}</span>
+                                </li>
+              ))}
+                            </ul>
+                          </td>
                         </tr>
                       ))}
                     </tbody>
