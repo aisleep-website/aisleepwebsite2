@@ -99,36 +99,36 @@ export const WhitepaperPage: React.FC<WhitepaperPageProps> = ({ onBack }) => {
 
   const roadmapData = [
     {
-      period: 'Q4 2025',
-      milestones: 'Token launch on DEX; first reward distribution; Beta App (iOS/Android); first CEX listing; partnerships kick-off.'
+      period: 'Q1 2026 — Core Ecosystem Launch',
+      milestones: 'Launch of the official AISleep App (iOS & Android). Activation of AISleep\'s foundational experience and core progression system. Launch of the AIS token on decentralized platforms. First centralized exchange listing to ensure accessibility and liquidity. Initial release of our reward and progression framework inside the app.'
     },
     {
-      period: 'Q1 2026',
-      milestones: 'Major app update; launch of "Lunara Soul" – dynamic NFTs go live (Q1 2026); 3–4 new CEX listings; staking program launch.'
+      period: 'Q2 2026 — Expansion & User Growth',
+      milestones: 'Major update introducing advanced engagement features and deeper user progression. Release of AISleep\'s first digital asset layer to support long-term ecosystem value. Expansion of our reward engine with refined mechanics. Additional exchange listings to widen token reach. Rollout of the first wave of global community initiatives.'
     },
     {
-      period: 'Q2 2026',
-      milestones: 'Apple Health & Fitbit integration; advanced NFT reward mechanics; automated daily reward distribution.'
+      period: 'Q3 2026 — Integrations & Enhanced Intelligence',
+      milestones: 'Integration of broader wellness data channels to enrich user experience. Significant upgrade to AISleep\'s AI-based guidance system. Early partnerships within wellness and digital health ecosystems. Automated reward optimization and behavioral insights features.'
     },
     {
-      period: 'Q3 2026',
-      milestones: 'Global expansion with regional partnerships; additional CEX listings.'
+      period: 'Q4 2026 — Global Positioning Phase',
+      milestones: 'Localization and multi-language support for international markets. Strategic partnerships with global wellness and lifestyle platforms. Enhanced AI coaching and personalized improvement pathways. Additional token utility features introduced into the ecosystem.'
     },
     {
-      period: '2027',
-      milestones: 'Partnerships with global sleep labs; integrations with leading wearables; regional compliance workstreams.'
+      period: '2027 — Institutional & Large-Scale Development',
+      milestones: 'Collaboration with regional wellness organizations and digital innovation hubs. Development of enterprise-level wellness infrastructure tools. Expansion of AI-driven analytics to support broader professional and lifestyle applications. Strengthening of the AISleep brand across targeted global regions.'
     },
     {
-      period: '2028',
-      milestones: 'Expansion across Asia & Latin America; localized sleep-coaching; multilingual support at scale.'
+      period: '2028 — Global Ecosystem Maturity',
+      milestones: 'Full-scale international expansion across multiple continents. Deployment of multi-market engagement models. Advanced multilingual support and global user onboarding tools. Consolidation of AISleep as a leader in behavioral wellness innovation.'
     },
     {
-      period: '2029',
-      milestones: 'Insurance & hospital integrations for wellness-linked benefits; enterprise wellness APIs; data-secure analytics for institutions.'
+      period: '2029 — Ecosystem Deepening & Partnerships',
+      milestones: 'Integration with large wellness networks and institutional partners. Deployment of secure analytics channels for organizational use. Broadened utility for AIS token across various digital ecosystems.'
     },
     {
-      period: '2030',
-      milestones: 'Mature, decentralized DAO ecosystem; AISleep positioned within a $100B+ wellness economy with sustainable revenues from partnerships and premium services.'
+      period: '2030 — AISleep Becomes a Global Wellness Infrastructure',
+      milestones: 'Transition into a decentralized, community-driven governance model (DAO). Establishment of a sustainable multi-revenue ecosystem. AISleep recognized as a global behavioral wellness standard with long-term market impact.'
     },
   ];
 
